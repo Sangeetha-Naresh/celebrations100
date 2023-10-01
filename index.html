@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Celebration Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            text-align: center;
+            background-color: #333;
+            color: #fff;
+            padding: 2rem 0;
+        }
+
+        h1 {
+            font-size: 3rem;
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-20px);
+            }
+            60% {
+                transform: translateY(-10px);
+            }
+        }
+
+        .container {
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .confetti {
+            width: 20px;
+            height: 20px;
+            background-color: #f39c12;
+            position: absolute;
+            animation: float 5s ease-in infinite, spin 1s linear infinite;
+        }
+
+        @keyframes float {
+            0%, 100% {
+                transform: translateX(0);
+            }
+            50% {
+                transform: translateX(50px);
+            }
+        }
+
+        @keyframes spin {
+            0%, 100% {
+                transform: rotate(0deg);
+            }
+            50% {
+                transform: rotate(360deg);
+            }
+        }
+
+        .main-content {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 2rem;
+            margin: 2rem auto;
+            max-width: 600px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        p {
+            font-size: 1.2rem;
+            margin-top: 1rem;
+        }
+
+        audio {
+            width: 100%;
+            margin-top: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Celebration Time!</h1>
+        <img src="confetti.png" alt="Confetti" class="confetti">
+    </header>
+    <div class="container">
+        <div class="main-content">
+            <img src="celebration.gif" alt="Celebration" width="400" height="300">
+            <p>Congratulations on your achievement Dear Asmitha! Let's celebrate this milestone together.</p>
+            <audio controls autoplay loop>
+                <source src="Happy girl.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+    </div>
+</body>
+</html>
